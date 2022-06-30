@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form action="#" id="survey-form">
+      <label for="name" id="name-label"
+        >Name <input type="text" id="name" required placeholder="Name"
+      /></label>
+      <label id="email-label"
+        >Email <input type="email" id="email" required placeholder="Email"
+      /></label>
+      <label id="number-label">
+        Age (optional)
+        <input type="number" id="number" min="18" max="120" placeholder="Age"
+      /></label>
+      <select id="dropdown">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+      </select>
+      <input type="radio" name="recomendation" id="radio" value="yes" /> Yes
+      <input type="radio" name="recomendation" id="radio" value="no" /> No
+      <input type="checkbox" name="agree" id="check" value="agree" /> Agree
+      <input type="checkbox" name="agree" id="check" value="terms" /> Terms
+      <textarea name="textarea" id="text-space" cols="30" rows="10"></textarea>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+    <a href="https://survey-form.freecodecamp.rocks/">link</a>
+  </body>
+</html>

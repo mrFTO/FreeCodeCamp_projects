@@ -1,0 +1,15 @@
+#title {
+  font-size: 22px;
+}
+#description{
+    font-size: 18px;
+}
+input, textarea {
+    display: block;
+}
+body {
+    background-color: bisque;
+}
+h1, p {
+    text-align: center;
+}
