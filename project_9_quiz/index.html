@@ -51,28 +51,101 @@
           <div class="question-block">
             <p>1</p>
             <fieldset class="question" name="field1">
-              <legend>true/false question1</legend>
+              <legend>
+                The legend element represents a caption for the content of its
+                parent fieldset element
+              </legend>
               <ul class="answers-list">
-                <li></li>
-                <li></li>
+                <li>
+                  <label for="answer"
+                    ><input
+                      type="radio"
+                      name="answer"
+                      id="answer"
+                      value="true"
+                    />True</label
+                  >
+                </li>
+                <li>
+                  <label for="answer"
+                    ><input
+                      type="radio"
+                      name="answer"
+                      id="answer"
+                      value="false"
+                    />False</label
+                  >
+                </li>
               </ul>
             </fieldset>
           </div>
           <div class="question-block">
             <p>2</p>
             <fieldset class="question" name="field2">
-              <legend>true/false question1</legend>
+              <legend>
+                A label element nesting an input element is required to have a
+                for attribute with the same value as the input's id
+              </legend>
               <ul class="answers-list">
-                <li></li>
-                <li></li>
+                <li>
+                  <label for="answer1"
+                    ><input
+                      type="radio"
+                      name="answer1"
+                      id="answer1"
+                    />True</label
+                  >
+                </li>
+                <li>
+                  <label for="answer1"
+                    ><input
+                      type="radio"
+                      name="answer1"
+                      id="answer1"
+                    />False</label
+                  >
+                </li>
               </ul>
             </fieldset>
           </div>
         </section>
         <section role="region" aria-labelledby="css-questions">
           <h2 id="css-questions">css-questions</h2>
+          <div class="formrow">
+            <div class="question-block">
+              <label for="options">Are you a frontend developer?</label>
+            </div>
+            <div class="answer">
+              <select name="options" id="options" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="text-area">Do you have any questions:</label>
+            </div>
+            <div class="answer">
+              <textarea
+                name="text-area"
+                id="text-area"
+                cols="30"
+                rows="10"
+                placeholder="Please enter your question here"
+              ></textarea>
+            </div>
+          </div>
         </section>
+        <button type="submit">Submit</button>
       </form>
     </main>
+    <footer>
+      <address>
+        <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+        San Francisco<br />
+        California<br />
+        USA
+      </address>
+    </footer>
   </body>
 </html>
