@@ -1,0 +1,36 @@
+main {
+  background-color: lightgray;
+}
+
+.heading {
+  background-color: aqua;
+  text-align: center;
+  padding: 5px;
+}
+.timeline {
+  text-align: center;
+}
+img {
+    display: block;
+}
+#image {
+    max-width: 100%;
+    height: auto;
+}
+#img-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 10px;
+}
+#img-caption {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+ul {
+    max-width: 550px;
+}
+
