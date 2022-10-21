@@ -8,25 +8,29 @@
     <title>Technical Documentation</title>
   </head>
   <body>
-    <nav>
-      <h1>JS Documentation</h1>
-      <a href="">Introduction</a>
-      <a href="">What you should already know</a>
-      <a href="">JavaScript and Java</a>
-      <a href="">Hello world</a>
-      <a href="">Variables</a>
-      <a href="">Declaring variables</a>
-      <a href="">Variable scope</a>
-      <a href="">Global variables</a>
-      <a href="">Constants</a>
-      <a href="">Data types</a>
-      <a href="">if...else statement</a>
-      <a href="">while statement</a>
-      <a href="">Function declarations</a>
-      <a href="">Reference</a>
+    <nav class="navbar" id="navbar">
+      <header>JS Documentation</header>
+      <a href="#introduction" class="nav-link">Introduction</a>
+      <a href="#what_you_should_already_know" class="nav-link"
+        >What you should already know</a
+      >
+      <a href="#javaScript_and_java" class="nav-link">JavaScript and Java</a>
+      <a href="#hello_world" class="nav-link">Hello world</a>
+      <a href="#variables" class="nav-link">Variables</a>
+      <a href="#declaring_variables" class="nav-link">Declaring variables</a>
+      <a href="#variable_scope" class="nav-link">Variable scope</a>
+      <a href="#global_variables" class="nav-link">Global variables</a>
+      <a href="#constants" class="nav-link">Constants</a>
+      <a href="#data_types" class="nav-link">Data types</a>
+      <a href="#if...else_statement" class="nav-link">if...else statement</a>
+      <a href="#while_statement" class="nav-link">while statement</a>
+      <a href="#function_declarations" class="nav-link"
+        >Function declarations</a
+      >
+      <a href="#reference" class="nav-link">Reference</a>
     </nav>
     <main id="main-doc">
-      <section class="main-section">
+      <section class="main-section" id="introduction">
         <header>Introduction</header>
         <p>
           JavaScript is a cross-platform, object-oriented scripting language. It
@@ -59,7 +63,7 @@
           </li>
         </ul>
       </section>
-      <section class="main-section">
+      <section class="main-section" id="what_you_should_already_know">
         <header>What you should already know</header>
         <p>This guide assumes you have the following basic background:</p>
         <ul>
@@ -74,7 +78,7 @@
           </li>
         </ul>
       </section>
-      <section class="main-section">
+      <section class="main-section" id="javaScript_and_java">
         <header>JavaScript and Java</header>
         <p>
           JavaScript and Java are similar in some ways but fundamentally
@@ -103,7 +107,7 @@
           parameters, and function return types are not explicitly typed.
         </p>
       </section>
-      <section class="main-section">
+      <section class="main-section" id="hello_world">
         <header>Hello world</header>
         <p>
           To get started with writing JavaScript, open the Scratchpad and write
@@ -118,7 +122,7 @@
           browser!
         </p>
       </section>
-      <section class="main-section">
+      <section class="main-section" id="variables">
         <header>Variables</header>
         <p>
           You use variables as symbolic names for values in your application.
@@ -138,7 +142,7 @@
           Number_hits, temp99, and _name.
         </p>
       </section>
-      <section class="main-section">
+      <section class="main-section" id="declaring_variables">
         <header>Declaring variables</header>
         <p>You can declare a variable in three ways:</p>
         <p>With the keyword var. For example, <code> var x = 42.</code></p>
@@ -152,7 +156,8 @@
           Variable scope below.
         </p>
       </section>
-      <section class="main-section">
+      <section class="main-section" id="variable_scope">
+        <header>Variable scope</header>
         <p>
           When you declare a variable outside of any function, it is called a
           global variable, because it is available to any other code in the
@@ -178,7 +183,7 @@
           defined</code
         >
       </section>
-      <section class="main-section">
+      <section class="main-section" id="global_variables">
         <header>Global variables</header>
         <p>
           Global variables are in fact properties of the global object. In web
@@ -193,7 +198,7 @@
           parent.phoneNumber.
         </p>
       </section>
-      <section class="main-section">
+      <section class="main-section" id="constants">
         <header>Constants</header>
         <p>
           You can create a read-only, named constant with the const keyword. The
@@ -229,7 +234,7 @@
           "otherValue";</code
         >
       </section>
-      <section class="main-section">
+      <section class="main-section" id="data_types">
         <header>Data types</header>
         <ul>
           <li>
@@ -260,7 +265,7 @@
           procedures that your application can perform.
         </p>
       </section>
-      <section class="main-section">
+      <section class="main-section" id="if...else_statement">
         <header>if...else statement</header>
         <p>
           Use the if statement to execute a statement if a logical condition is
@@ -310,7 +315,7 @@
         </p>
         <code>if ((x = y)) { /* statements here */ }</code>
       </section>
-      <section class="main-section">
+      <section class="main-section" id="while_statement">
         <header>while statement</header>
         <p>
           A while statement executes its statements as long as a specified
@@ -350,24 +355,52 @@
           true, so the loop terminates.
         </p>
       </section>
-      <section class="main-section">
+      <section class="main-section" id="function_declarations">
         <header>Function declarations</header>
-        <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by: </p>
+        <p>
+          A function definition (also called a function declaration, or function
+          statement) consists of the function keyword, followed by:
+        </p>
         <ul>
           <li>The name of the function.</li>
-          <li>A list of arguments to the function, enclosed in parentheses and separated by commas. </li>
-          <li>The JavaScript statements that define the function, enclosed in curly brackets, { }. </li>
+          <li>
+            A list of arguments to the function, enclosed in parentheses and
+            separated by commas.
+          </li>
+          <li>
+            The JavaScript statements that define the function, enclosed in
+            curly brackets, { }.
+          </li>
         </ul>
-        <p>For example, the following code defines a simple function named square: </p>
+        <p>
+          For example, the following code defines a simple function named
+          square:
+        </p>
         <code>function square(number) { return number * number; }</code>
-        <p>The function square takes one argument, called number. The function consists of one statement that says to return the argument of the function (that is, number) multiplied by itself. The return statement specifies the value returned by the function. </p>
+        <p>
+          The function square takes one argument, called number. The function
+          consists of one statement that says to return the argument of the
+          function (that is, number) multiplied by itself. The return statement
+          specifies the value returned by the function.
+        </p>
         <code>return number * number;</code>
-        <p>Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function. </p>
+        <p>
+          Primitive parameters (such as a number) are passed to functions by
+          value; the value is passed to the function, but if the function
+          changes the value of the parameter, this change is not reflected
+          globally or in the calling function.
+        </p>
       </section>
-      <section class="main-section">
+      <section class="main-section" id="reference">
         <header>Reference</header>
         <ul>
-          <li>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a></li>
+          <li>
+            All the documentation in this page is taken from
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+              >MDN</a
+            >
+          </li>
         </ul>
       </section>
     </main>
