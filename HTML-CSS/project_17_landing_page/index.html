@@ -5,27 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header id="header">
-      <img id="header-img" src="#" alt="#" />
-      <nav id="nav-bar">
-        <a href="" class="nav-link">ссылки на разделы страницы</a>
-        <a href="" class="nav-link"></a>
-        <a href="" class="nav-link"></a>
+    <header id="header" class="header">
+      <img
+        class="logo"
+        id="header-img"
+        src="./img/logo.svg"
+        alt="chicken-logo"
+      />
+      <h2 class="name">Newbie site-creation</h2>
+      <nav id="nav-bar" class="nav">
+        <a href="" class="nav-link">Features</a>
+        <a href="" class="nav-link">How It Works</a>
+        <a href="" class="nav-link">Pricing</a>
       </nav>
     </header>
-<main>
-    <video src="#"></video>
-    <form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
-        <input type="email" name="" id="email" placeholder="Please, enter your Email address here.">
-        <input type="submit" value="send">
+    <main>
+      <div class="mail-me">
+        <p>Fast and cheap site-creation studio</p>
+        <form
+          action="https://www.freecodecamp.com/email-submit"
+          method="post"
+          id="form"
+          class="form"
+        >
+          <input
+            type="email"
+            name=""
+            id="email"
+            placeholder="Please, enter your Email address here."
+          />
+          <button type="submit">get started</button>
+          <!-- <input type="submit" value="send" /> -->
+        </form>
+      </div>
+      <div class="features">
+        <div class="feature-item">
+          <img class="feature-img" src="./img/logo.png" alt="features" />
+          <h3>Feature name</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            tenetur repellat temporibus, at sunt nisi alias deleniti porro saepe
+            quam iure. Ab neque suscipit id debitis nesciunt rem, inventore
+            fugiat.
+          </p>
+        </div>
+        <div class="feature-item">
+          <img class="feature-img" src="./img/logo.png" alt="features" />
+          <h3>Feature name</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+            quas qui dolorum incidunt eos ut sequi nihil odio fuga quod! Labore
+            distinctio animi sunt tempora, velit quidem voluptate tempore
+            corrupti.
+          </p>
+        </div>
+        <div class="feature-item">
+          <img class="feature-img" src="./img/logo.png" alt="features" />
+          <h3>Feature name</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+            praesentium vitae voluptate modi provident, ab distinctio,
+            perferendis doloribus earum, labore iure beatae at commodi eos
+            tempore nisi ipsum facilis. Nam!
+          </p>
+        </div>
+      </div>
 
-    </form>
-</main>
-<!-- Идеи для лендинга: автосалон, автосервис, курсы по программированию, услуги проф бездельника, туры в японию, учеба в японии, школы японского языка, агенство недвижимости. манабо. -->
+      <div class="video">
+        <iframe
+          width="640"
+          height="360"
+          src="https://www.youtube.com/embed/xV7S8BhIeBo"
+          title="Portfolio Website Tutorial – Frontend Development with HTML, CSS, JavaScript"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
 
+      <div class="pricing">
+        <div class="price-element">
+          <h3>simple page</h3>
+          <p><strong>price 20$</strong></p>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <button>select</button>
+        </div>
+        <div class="price-element">
+          <h3>simple page</h3>
+          <p><strong>price 20$</strong></p>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <button>select</button>
+        </div>
+        <div class="price-element">
+          <h3>simple page</h3>
+          <p><strong>price 20$</strong></p>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <button>select</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="foot-nav">
+        <a href="">Privacy</a><a href="">Terms </a><a href="">Contact</a>
+      </div>
+      <p>Copyright 2022, Newbie site-creation &copy</p>
+    </footer>
   </body>
 </html>
 <!-- https://product-landing-page.freecodecamp.rocks/  example -->
+<!-- Идеи для лендинга: автосалон, автосервис, курсы по программированию, услуги проф бездельника, туры в японию, учеба в японии, школы японского языка, агенство недвижимости. манабо. -->

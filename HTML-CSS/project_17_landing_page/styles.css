@@ -1,6 +1,66 @@
-nav {position: sticky;}
-body {display: flex;}
+/* Selectors */
+main {width: 80%;
+margin: 0 auto;
+}
+nav {
+  position: sticky;
+}
+
+
+/* Classes */
+.header {
+  border: 1px solid #000;
+  width: 100%;
+}
+.logo {
+  border: 1px solid #000;
+}
+.nav {border: 1px solid #000;}
+
+
+
+.mail-me {
+    width: 100%;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+}
+
+.features {
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.feature-item {
+    border: 1px solid #000;
+    display: flex;
+}
+
+.feature-img {
+    width: 45px;
+    height: 45px;
+}
+
+.video {
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+}
+
+.pricing {
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-around;
+}
+
+.price-element {
+    border: 1px solid #000;
+    width: 30%;
+}
+
+
 
 @media screen {
-    
 }
