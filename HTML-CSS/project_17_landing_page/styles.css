@@ -3,27 +3,36 @@ main {
   width: 80%;
   margin: 0 auto;
 }
-nav {
-  position: sticky;
+body {
+  background-color: aliceblue;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 /* Classes */
 .header {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: aliceblue;
 }
 
-.logo {
+/* .logo {
   border: 1px solid #000;
-}
+} */
 
 .logo-name {
   display: flex;
 }
 
 .nav {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   display: flex;
   justify-content: space-around;
   width: 40%;
@@ -32,49 +41,116 @@ nav {
 
 .mail-me {
   width: 100%;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   text-align: center;
+}
+.mail-input {
+  width: 30%;
+  height: 15px;
+  font-size: 10px;
+}
+
+.form-button {
+  display: block;
+  margin: 10px auto;
+  border: none;
+  background-color: orange;
+  width: 150px;
+  height: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .features {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   display: flex;
   flex-direction: column;
 }
 .feature-item {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   display: flex;
+}
+
+.feat-title-box {
+  width: 100%;
+  height: 20%;
+  background-color: lightgray;
 }
 
 .feature-img {
   width: 45px;
   height: 45px;
+  align-self: center;
+  margin-right: 30px;
 }
 
 .video {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   display: flex;
   justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .pricing {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   display: flex;
   justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.price-heading {
+  width: 100%;
+  height: 12%;
+  background-color: lightgrey;
+  margin-top: 0;
+  padding-top: 10px;
 }
 
 .price-element {
   border: 1px solid #000;
   width: 30%;
   text-align: center;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.price-button {
+  
+  width: 30%;
+  height: 12%;
+  margin: 10px auto;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  border: none;
+  background-color: orange;
 }
 
 .footer {
-  border: 1px solid #000;
+  /* width: 100%; */
+  /* border: 1px solid #000; */
   background-color: lightgray;
-  text-align: right;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 15px;
+  /* text-align: right; */
+}
 
+.foot-nav {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-text {
+  font-size: 14px;
+  color: gray;
+}
 
 @media screen {
 }
