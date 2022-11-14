@@ -1,6 +1,6 @@
 /* Selectors */
 main {
-  width: 80%;
+  max-width: 60%;
   margin: 0 auto;
 }
 body {
@@ -59,6 +59,12 @@ a {
   height: 25px;
   text-transform: uppercase;
   font-weight: 700;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: blue;
+  color: azure;
 }
 
 .features {
@@ -110,17 +116,16 @@ a {
 .price-element {
   border: 1px solid #000;
   width: 30%;
+  min-height: 400px;
   text-align: center;
   height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 }
 
 .price-button {
-  
-  width: 30%;
+  min-width: 30%;
   height: 12%;
   margin: 10px auto;
   text-transform: uppercase;
@@ -128,25 +133,33 @@ a {
   font-weight: 700;
   border: none;
   background-color: orange;
+  cursor: pointer;
+}
+.price-button:hover {
+  background-color: blue;
+  color: azure;
 }
 
 .footer {
-  /* width: 100%; */
+  max-width: 60%;
+  height: 40px;
   /* border: 1px solid #000; */
   background-color: lightgray;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: center;
+  /* justify-content: center; */
+  
   padding: 15px;
+  margin: 0 auto;
   /* text-align: right; */
 }
 
 .foot-nav {
-  width: 25%;
+  width: 30%;
   display: flex;
   justify-content: space-around;
-}
+  }
 .footer-text {
   font-size: 14px;
   color: gray;
@@ -154,3 +167,5 @@ a {
 
 @media screen {
 }
+
+/* Упаковать в контейнер основную секцию и сделать адаптив для медиазапроса, ховер на кнопки и курсор  */

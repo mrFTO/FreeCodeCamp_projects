@@ -19,9 +19,9 @@
         <h2 class="name">Newbie site-creation</h2>
       </div>
       <nav id="nav-bar" class="nav">
-        <a href="#" class="nav-link">Features</a>
-        <a href="#" class="nav-link">How It Works</a>
-        <a href="#" class="nav-link">Pricing</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#video" class="nav-link">How It Works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
       </nav>
     </header>
     <main>
@@ -36,15 +36,14 @@
           <input
             class="mail-input"
             type="email"
-            name=""
+            name="email"
             id="email"
             placeholder="Please, enter your Email address here."
           />
-          <button class="form-button" type="submit">get started</button>
-          <!-- <input type="submit" value="send" /> -->
+          <input class="form-button" type="submit" value="get started" id="submit" />
         </form>
       </div>
-      <div class="features">
+      <div id="features" class="features">
         <div class="feature-item">
           <img class="feature-img" src="./img/feature.svg" alt="features" />
           <div class="feat-content">
@@ -83,8 +82,8 @@
         </div>
       </div>
 
-      <div class="video">
-        <iframe
+      <div  class="video">
+        <iframe id="video"
           width="640"
           height="360"
           src="https://www.youtube.com/embed/xV7S8BhIeBo"
@@ -95,7 +94,7 @@
         ></iframe>
       </div>
 
-      <div class="pricing">
+      <div id="pricing" class="pricing">
         <div class="price-element">
           <h3 class="price-heading">simple page</h3>
           <p><strong>price 20$</strong></p>
@@ -127,4 +126,3 @@
   </body>
 </html>
 <!-- https://product-landing-page.freecodecamp.rocks/  example -->
-
