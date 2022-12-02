@@ -3,6 +3,7 @@
   --penguin-picorna: orange;
   --penguin-skin: gray;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -11,14 +12,16 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+
 .ground {
   width: 100vw;
-  height: 400px;
+  height: calc(100vh - 300px);
   background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
   z-index: 3;
   position: absolute;
   margin-top: -58px;
 }
+
 .penguin {
   width: 300px;
   height: 300px;
@@ -26,6 +29,12 @@ body {
   margin-top: 75px;
   z-index: 4;
   position: relative;
+  transition: 1s ease-in-out 0ms;
+}
+
+.penguin:active {
+  transform: scale(1.5);
+  cursor: not-allowed;
 }
 
 .left-mountain {
@@ -37,6 +46,7 @@ body {
   z-index: 2;
   margin-top: 100px;
 }
+
 .back-mountain {
   width: 300px;
   height: 300px;
@@ -61,6 +71,7 @@ body {
 .penguin * {
   position: absolute;
 }
+
 .penguin-head {
   width: 50%;
   height: 45%;
@@ -70,6 +81,7 @@ body {
   left: 25%;
   z-index: 1;
 }
+
 .penguin-body {
   width: 53%;
   height: 45%;
@@ -83,6 +95,7 @@ body {
   top: 40%;
   left: 23.5%;
 }
+
 .penguin-body::before {
   content: "";
   position: absolute;
@@ -127,9 +140,11 @@ body {
   top: 45%;
   border-radius: 50%;
 }
+
 .eye.left {
   left: 25%;
 }
+
 .eye.right {
   right: 25%;
 }
@@ -154,6 +169,7 @@ body {
 .blush.left {
   left: 15%;
 }
+
 .blush.right {
   right: 15%;
 }
@@ -175,6 +191,7 @@ body {
   top: 65%;
   left: 42%;
 }
+
 .shirt {
   font-size: 25px;
   font-family: Helvetica, sans-serif;
@@ -184,6 +201,7 @@ body {
   z-index: 1;
   color: #6a6969;
 }
+
 .shirt div {
   font-weight: normal;
   top: 22.5px;
@@ -198,10 +216,12 @@ body {
   border-radius: 50%;
   z-index: -1;
 }
+
 .foot.left {
   left: 25%;
   transform: rotate(80deg);
 }
+
 .foot.right {
   right: 25%;
   transform: rotate(-80deg);
